@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace DotNet8.CheckEnumValuesConsoleApp;
+
+public enum EnumService
+{
+    Apple,
+    Orange,
+    Lime,
+    GrapeFruit,
+    Banana,
+    StrawBerry
+}
+
+
