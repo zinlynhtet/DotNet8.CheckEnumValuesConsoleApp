@@ -9,6 +9,12 @@ public enum EnumService
     Banana,
     StrawBerry
 }
+public enum Medals
+{
+    Gold = 1,
+    Silver = 2,
+    Bronze = 2
+}
 
 class Program
 {
@@ -24,5 +30,8 @@ class Program
         var getValues = Enum.GetValues(typeof(EnumService)).Length;
         Console.WriteLine("Total items by GetNames: " + getNames);
         Console.WriteLine("Total items by GetValues: " + getValues);
+
+        var distinctValues = Enum.GetValues(typeof(Medals)).Cast<Medals>().Distinct().Count();
+        Console.WriteLine("Total number of distinct values: " + distinctValues);
     }
 }
